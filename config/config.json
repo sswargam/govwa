@@ -2,7 +2,7 @@
     "user": "govwauser",
     "password": "govwaP@ss",
     "dbname": "govwa",
-    "sqlhost": "db-mysql",
+    "sqlhost": "localhost",
     "sqlport": "3306",
     "webserver": "http://localhost",
     "webport": "8888",
