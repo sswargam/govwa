@@ -18,7 +18,7 @@ services:
     ports: 
       - 3307:3306
     environment: 
-      - MYSQL_ROOT_HOST=mysql-host
+      - MYSQL_ROOT_HOST=localhost
       - MYSQL_USER=govwauser
       - MYSQL_PASSWORD=govwaP@ss
       - MYSQL_DATABASE=govwa
