@@ -61,14 +61,14 @@ go run app.go
 
 =======
 Server running at port :8082
-Open this URL http://192.168.56.101:8082/ on your browser to access GoVWA
+Open this URL http://localhost:8082/ on your browser to access GoVWA
 
 ```
 Open the URL to access GoVWA and follow the setup instruction to create database and tables
 
 #### Setup from docker
 ```
-git clone https://github.com/0c34/govwa.git
+git clone https://github.com/sswargam/govwa.git
 
 inside govwa directory:
 docker-compose up --build
@@ -89,6 +89,7 @@ Explore the vulnerability.
 
 #### Contributor
 ---
+* Satish Swargam (DevSecOps)
 * Khaedir (golang programming)
 * Xaquille (web design)
 
@@ -98,6 +99,6 @@ Explore the vulnerability.
 * ~~XXE Vulnerability~~
 * NoSQLInjection
 * JSON Web API (unprotected API)
-* Build Simple Android APP
+* Continuous security testing lab with dockerize container
 
-Powered by [NemoSecurity](https://nemosecurity.com)
+Powered by [Synopsys](https://synopsys.com)
