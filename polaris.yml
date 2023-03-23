@@ -1,0 +1,26 @@
+version: "1"
+project:
+  name: govwa-lab
+  branch: ${scm.git.branch}
+  revision:
+    name: ${scm.git.commit}
+    date: ${scm.git.commit.date}
+capture:
+  build:
+    cleanCommands:
+    // - shell: [mvn, -B, clean]
+    buildCommands:
+    - shell: [mvn, -B, compile]
+    - shell: cd /go/src
+		- shell: go get github.com/go-sql-driver/mysql
+		- shell: go get github.com/gorilla/sessions
+		- shell: go get github.com/julienschmidt/httprouter
+
+				// Build the app.
+		- shell: go build
+analyze:
+  mode: central
+install:
+  coverity:
+    version: default
+serverUrl: https://sig-cons-ms-sca.polaris.synopsys.com
