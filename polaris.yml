@@ -10,14 +10,12 @@ capture:
     cleanCommands:
     // - shell: [mvn, -B, clean]
     buildCommands:
-    - shell: [mvn, -B, compile]
-    - shell: cd /go/src
-		- shell: go get github.com/go-sql-driver/mysql
-		- shell: go get github.com/gorilla/sessions
-		- shell: go get github.com/julienschmidt/httprouter
-
-				// Build the app.
-		- shell: go build
+    - shell: go get github.com/go-sql-driver/mysql
+    - shell: go get github.com/gorilla/sessions
+    - shell: go get github.com/julienschmidt/httprouter
+    
+    // Build the app.
+    - shell: go build
 analyze:
   mode: central
 install:
