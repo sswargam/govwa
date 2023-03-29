@@ -12,7 +12,7 @@ services:
       - db-mysql
 
   db-mysql:
-    image: mysql:8.0.29
+    image: mysql:5.7
     command: mysqld --sql_mode=""
     container_name: db_mysql
     ports: 
