@@ -2,7 +2,7 @@
     "user": "govwauser",
     "password": "govwaP@ss",
     "dbname": "govwa",
-    "sqlhost": "docker.for.mac.localhost",
+    "sqlhost": "localhost",
     "sqlport": "3306",
     "webserver": "http://localhost",
     "webport": "8888",
